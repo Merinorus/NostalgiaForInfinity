@@ -69,7 +69,7 @@ class NostalgiaForInfinityX7(IStrategy):
   INTERFACE_VERSION = 3
 
   def version(self) -> str:
-    return "v17.4.1"
+    return "v17.4.2"
 
   stoploss = -0.99
 
@@ -209,8 +209,8 @@ class NostalgiaForInfinityX7(IStrategy):
   # Grinding feature
   grinding_enable = True
   derisk_enable = True
-  stops_enable = False
-  doom_stops_enable = False
+  stops_enable = True
+  doom_stops_enable = True
   u_e_stops_enable = False
 
   # Grinding
@@ -509,6 +509,7 @@ class NostalgiaForInfinityX7(IStrategy):
   system_v3_1_stop_threshold_scalp_spot = 0.24
   system_v3_1_stop_threshold_scalp_futures = 0.70
 
+  system_v3_2_stops_enable = False
   system_v3_2_stop_threshold_doom_spot = 0.12
   system_v3_2_stop_threshold_doom_futures = 0.35
   system_v3_2_stop_threshold_spot_rebuy = 0.48
@@ -26455,7 +26456,7 @@ class NostalgiaForInfinityX7(IStrategy):
 
       if is_system_v3_2:
         # Stoplosses
-        if self.stops_enable and (
+        if self.system_v3_2_stops_enable and (
           profit_stake
           < -(
             filled_entries[0].cost
@@ -27075,7 +27076,7 @@ class NostalgiaForInfinityX7(IStrategy):
     if not sell:
       if is_system_v3_2:
         # Stoplosses
-        if self.stops_enable and (
+        if self.system_v3_2_stops_enable and (
           profit_stake
           < -(
             filled_entries[0].cost
@@ -42984,7 +42985,7 @@ class NostalgiaForInfinityX7(IStrategy):
       return False, None
     if is_system_v3_2:
       # Stoploss doom
-      if self.doom_stops_enable and (
+      if self.system_v3_2_stops_enable and (
         profit_stake
         < -(
           filled_entries[0].cost
@@ -52875,7 +52876,7 @@ class NostalgiaForInfinityX7(IStrategy):
 
       if is_system_v3_2:
         # Stoplosses
-        if self.stops_enable and (
+        if self.system_v3_2_stops_enable and (
           profit_stake
           < -(
             filled_entries[0].cost
@@ -53464,7 +53465,7 @@ class NostalgiaForInfinityX7(IStrategy):
     if not sell:
       if is_system_v3_2:
         # Stoplosses
-        if self.stops_enable and (
+        if self.system_v3_2_stops_enable and (
           profit_stake
           < -(
             filled_entries[0].cost
@@ -69373,7 +69374,7 @@ class NostalgiaForInfinityX7(IStrategy):
       return False, None
     if is_system_v3_2:
       # Stoploss doom
-      if self.doom_stops_enable and (
+      if self.system_v3_2_stops_enable and (
         profit_stake
         < -(
           filled_entries[0].cost
