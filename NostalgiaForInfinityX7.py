@@ -571,8 +571,8 @@ class NostalgiaForInfinityX7(IStrategy):
   system_v3_grind_1_profit_threshold_spot = 0.025
   system_v3_grind_1_profit_threshold_futures = 0.025
   system_v3_grind_1_use_derisk = True
-  system_v3_grind_1_derisk_spot = -0.11
-  system_v3_grind_1_derisk_futures = -0.11
+  system_v3_grind_1_derisk_spot = -0.12
+  system_v3_grind_1_derisk_futures = -0.12
 
   system_v3_grind_2_enable = True
   system_v3_grind_2_stakes_spot = [0.10, 0.12, 0.14, 0.16, 0.18]
@@ -582,8 +582,8 @@ class NostalgiaForInfinityX7(IStrategy):
   system_v3_grind_2_profit_threshold_spot = 0.035
   system_v3_grind_2_profit_threshold_futures = 0.035
   system_v3_grind_2_use_derisk = True
-  system_v3_grind_2_derisk_spot = -0.11
-  system_v3_grind_2_derisk_futures = -0.11
+  system_v3_grind_2_derisk_spot = -0.12
+  system_v3_grind_2_derisk_futures = -0.12
 
   system_v3_grind_3_enable = True
   system_v3_grind_3_stakes_spot = [0.10, 0.12, 0.14, 0.16, 0.18]
@@ -593,8 +593,8 @@ class NostalgiaForInfinityX7(IStrategy):
   system_v3_grind_3_profit_threshold_spot = 0.04
   system_v3_grind_3_profit_threshold_futures = 0.04
   system_v3_grind_3_use_derisk = True
-  system_v3_grind_3_derisk_spot = -0.11
-  system_v3_grind_3_derisk_futures = -0.11
+  system_v3_grind_3_derisk_spot = -0.12
+  system_v3_grind_3_derisk_futures = -0.12
 
   system_v3_grind_4_enable = True
   system_v3_grind_4_stakes_spot = [0.05, 0.06, 0.07, 0.08, 0.09]
@@ -604,8 +604,8 @@ class NostalgiaForInfinityX7(IStrategy):
   system_v3_grind_4_profit_threshold_spot = 0.08
   system_v3_grind_4_profit_threshold_futures = 0.08
   system_v3_grind_4_use_derisk = True
-  system_v3_grind_4_derisk_spot = -0.11
-  system_v3_grind_4_derisk_futures = -0.11
+  system_v3_grind_4_derisk_spot = -0.12
+  system_v3_grind_4_derisk_futures = -0.12
 
   system_v3_grind_5_enable = True
   system_v3_grind_5_stakes_spot = [0.05, 0.06, 0.07, 0.08, 0.09]
@@ -615,8 +615,8 @@ class NostalgiaForInfinityX7(IStrategy):
   system_v3_grind_5_profit_threshold_spot = 0.10
   system_v3_grind_5_profit_threshold_futures = 0.10
   system_v3_grind_5_use_derisk = True
-  system_v3_grind_5_derisk_spot = -0.11
-  system_v3_grind_5_derisk_futures = -0.11
+  system_v3_grind_5_derisk_spot = -0.12
+  system_v3_grind_5_derisk_futures = -0.12
 
   system_v3_buyback_1_enable = False
   system_v3_buyback_1_stake_spot = 1.00
