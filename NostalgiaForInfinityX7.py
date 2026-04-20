@@ -21045,7 +21045,10 @@ class NostalgiaForInfinityX7(IStrategy):
           long_entry_logic.append(df["protections_long_global"] == True)
 
           long_entry_logic.append(
-            ((df["RSI_3"] > 10.0) | (df["RSI_3_1d"] > 30.0) | (df["AROONU_14_15m"] < 100.0))
+            # 5m & 4h down move, 15m high
+            ((df["RSI_3"] > 10.0) | (df["RSI_3_4h"] > 10.0) | (df["AROONU_14_15m"] < 40.0))
+            # 5m & 1d down move, 15m high
+            & ((df["RSI_3"] > 10.0) | (df["RSI_3_1d"] > 30.0) | (df["AROONU_14_15m"] < 80.0))
             # 5m down move, 1h & 1d high
             & ((df["RSI_3"] > 10.0) | (df["AROONU_14_1h"] < 80.0) | (df["AROONU_14_1d"] < 100.0))
             # 5m down move, 15m & 1h high
