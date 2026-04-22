@@ -47496,8 +47496,8 @@ class NostalgiaForInfinityX7(IStrategy):
       )
       or (
         (last_candle["RSI_3"] > 5.0)
-        and (last_candle["RSI_3_1h"] > 10.0)
-        and (last_candle["RSI_3_4h"] > 10.0)
+        and (last_candle["RSI_3_1h"] > 5.0)
+        and (last_candle["RSI_3_4h"] > 5.0)
         and (previous_candle["SMA_9"] < previous_candle["SMA_21"])
         and (last_candle["SMA_9"] > last_candle["SMA_21"])
         and (last_candle["close"] < (last_candle["EMA_200"] * 0.980))
@@ -73603,8 +73603,8 @@ class NostalgiaForInfinityX7(IStrategy):
       )
       or (
         (last_candle["RSI_3"] < 95.0)
-        and (last_candle["RSI_3_1h"] < 90.0)
-        and (last_candle["RSI_3_4h"] < 90.0)
+        and (last_candle["RSI_3_1h"] < 95.0)
+        and (last_candle["RSI_3_4h"] < 95.0)
         and (previous_candle["SMA_9"] > previous_candle["SMA_21"])
         and (last_candle["SMA_9"] < last_candle["SMA_21"])
         and (last_candle["close"] > (last_candle["EMA_200"] * 1.020))
