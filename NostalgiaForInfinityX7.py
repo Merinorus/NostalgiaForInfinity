@@ -20662,6 +20662,9 @@ class NostalgiaForInfinityX7(IStrategy):
           long_entry_logic.append(df["RSI_14_1h"] < 80.0)
           long_entry_logic.append(df["RSI_14_4h"] < 80.0)
           long_entry_logic.append(df["RSI_14_1d"] < 80.0)
+          long_entry_logic.append(df["AROONU_14_15m"] < 70.0)
+          long_entry_logic.append(df["AROONU_14_1h"] < 100.0)
+          long_entry_logic.append(df["AROONU_14_4h"] < 100.0)
           long_entry_logic.append(df["AROONU_14_1d"] < 100.0)
           long_entry_logic.append(df["STOCHRSIk_14_14_3_3_1d"] < 90.0)
 
