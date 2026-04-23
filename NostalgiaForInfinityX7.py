@@ -18422,10 +18422,10 @@ class NostalgiaForInfinityX7(IStrategy):
             & ((df["RSI_3_1h"] > 15.0) | (df["RSI_3_4h"] > 20.0) | (df["STOCHRSIk_14_14_3_3_4h"] < 40.0))
             # 1h & 4h down move, 1d high
             & ((df["RSI_3_1h"] > 15.0) | (df["RSI_3_4h"] > 20.0) | (df["STOCHRSIk_14_14_3_3_1d"] < 90.0))
-            # 1h & 4h down move, 1d downtrend
-            & ((df["RSI_3_1h"] > 15.0) | (df["RSI_3_4h"] > 25.0) | (df["ROC_9_1d"] > -40.0))
             # 1h & 4h down move, 1d high
             & ((df["RSI_3_1h"] > 15.0) | (df["RSI_3_4h"] > 30.0) | (df["STOCHRSIk_14_14_3_3_1d"] < 80.0))
+            # 1h & 4h down move, 1d downtrend
+            & ((df["RSI_3_1h"] > 15.0) | (df["RSI_3_4h"] > 45.0) | (df["ROC_9_1d"] > -40.0))
             # 1h & 1d down move, 4h high
             & ((df["RSI_3_1h"] > 15.0) | (df["RSI_3_1d"] > 15.0) | (df["STOCHRSIk_14_14_3_3_4h"] < 80.0))
             # 1h down move, 4h high, 1d overbought
